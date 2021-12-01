@@ -1,0 +1,42 @@
+
+{
+    "settings" : {
+        "output_file": ".txt"
+    },
+    "you": {
+        "name": "Michael Ericson",
+        "phone_number": "Insert your phone number",
+        "email": "Insert your email",
+        "address": "Insert your physical address",
+        "github": "insert github link",
+        "linked_in": "insert linked in link",
+        "former_industry": "Insert your former industry",
+        "adjectives": "insert adjectives(s)",
+        "skills": [
+            "JavaScript",
+            "React",
+            "Redux",
+            "HTML"
+        ],
+        "reason_for_coding": "reason for getting into coding",
+        "hook": "insert hook",
+        "prior_job": "insert prior_job",
+        "positive_qualities": "insert positive qualities",
+        "stack_focus": "FRONTEND/BACKEND/FULL-STACK"
+    },
+    "relevant_project": {
+        "name": "insert project name",
+        "description": "project description",
+        "technologies": "insert technologies"
+    },
+
+    "company": {
+        "name": "Insert company name",
+        "address_1": "123 Job street",
+        "address_2": "Jobstown, GA, 12121",
+        "job_title": "insert job title",
+        "stack_focus": "FRONTEND/BACKEND/FULL-STACK",
+        "hiring_manager_name": "Insert hiring managers name",
+        "mission": "Insert mission"
+    }
+}
