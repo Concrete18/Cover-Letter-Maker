@@ -1,15 +1,57 @@
-import json
+import json, difflib
 import datetime as dt
 
-class main:
-    
-    current_date = dt.datetime.now().strftime('%d %B %Y')
+class Main:
 
+
+    # sets current date with specific format
+    current_date = dt.datetime.now().strftime('%B, %Y')
+    # json data
     with open('data.json') as json_file:
         data = json.load(json_file)
 
 
+    def find_relevant_skills(self) -> list:
+        '''
+        Finds all of your skills used within the job posting wihtin `full_posting.txt`.
+        '''
+        your_skills = self.data['full_skills_list']
+        # gets full posting data
+        character_remove_list = [':', ',']
+        with open("full_posting.txt", "r") as posting:
+            full_posting_words = []
+            for line in posting:
+                for word in line.split():
+                    for char in character_remove_list:
+                        word = word.replace(char, '')
+                    full_posting_words.append(word)
+        # find relevant skills
+        relevant_skills = []
+        for posting_word in full_posting_words:
+            max_similarity = .8
+            for skill in your_skills:
+                similarity = difflib.SequenceMatcher(None, posting_word, skill).ratio()
+                if similarity > max_similarity:
+                    if posting_word not in relevant_skills:
+                        relevant_skills.append(posting_word)
+        print(relevant_skills)
+        return relevant_skills
+
+    @staticmethod
+    def to_comma_string(list):
+        output = ''
+        length = len(list)
+        for count, item in enumerate(list):
+            if count+1 == length:
+                output += f'and {item}'
+            else:
+                output += f'{item}, '
+        return output
+
     def write_to_file(self):
+        '''
+        Writes text to a file.
+        '''
         # you
         your_name = self.data['you']['name']
         phone_number = self.data['you']['phone_number']
@@ -18,7 +60,7 @@ class main:
         github = self.data['you']['github']
         linked_in = self.data['you']['linked_in']
         adjectives = self.data['you']['prior_job']
-        skills = ', '.join(self.data['you']['skills'])
+        skills = self.to_comma_string(self.data['you']['skills'])
         reason_for_coding = self.data['you']['prior_job']
         hook = self.data['you']['prior_job']
         prior_job = self.data['you']['prior_job']
@@ -53,29 +95,18 @@ class main:
             f'I\'m excited about this role and looking forward to hearing from you soon.'
         ]
 
-        text = f'''
-        {your_name}
-        {address} - {phone_number} - {email}
-        {linked_in}
-        {github}
+        header = f'{your_name}\n{address} - {phone_number} - {email}\n{linked_in}\n{github}'
+        company_info = f'\n\n{self.current_date}\n\n{company_name}\n{company_address_1}\n{company_address_2}'
+        intro = f'\n\nDear {hiring_manager_name},\n\n{self.to_comma_string(para_sentences)}'
+        goodbye = f'\n\nSincerely,\n{your_name}'
 
-        {self.current_date}
-
-        {company_name}
-        {company_address_1}
-        {company_address_2}
-
-        Dear {hiring_manager_name},
-
-        {' '.join(para_sentences)}
-
-        Sincerely, 
-        {your_name}
-        '''
+        combined = header + company_info + intro + goodbye
     
         with open(f'starter_cover_letter.txt', "w") as outfile:
-            outfile.write(text)
+            outfile.write(combined)
 
 
-
-main().write_to_file()
+if __name__ == '__main__':
+    app = Main()
+    app.find_relevant_skills()
+    # app.write_to_file()

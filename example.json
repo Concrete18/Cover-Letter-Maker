@@ -7,7 +7,8 @@
         "name": "Michael Ericson",
         "phone_number": "Insert your phone number",
         "email": "Insert your email",
-        "address": "Insert your physical address",
+        "address_1": "Insert your physical address",
+        "address_2": "Insert your physical address",
         "github": "insert github link",
         "linked_in": "insert linked in link",
         "former_industry": "Insert your former industry",
@@ -29,11 +30,10 @@
         "description": "project description",
         "technologies": "insert technologies"
     },
-
     "company": {
         "name": "Insert company name",
         "address_1": "123 Job street",
-        "address_2": "Jobstown, GA, 12121",
+        "address_2": "Jobs Town GA, 12121",
         "job_title": "insert job title",
         "stack_focus": "FRONTEND/BACKEND/FULL-STACK",
         "hiring_manager_name": "Insert hiring managers name",
