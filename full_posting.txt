@@ -1,37 +1,47 @@
-Our mission at Duolingo is to develop the best education in the world and make it universally available. But we've got more left to do — and that's where you come in!
+Spotify is looking for Backend Engineers to join our Platform - Developer Experience engineering organization. Developer Experience is a critical enabler of the work other Spotify Engineers do, by providing development environments, libraries, and the vital testing infrastructure needed to write the products that Spotify is known for.
+Location
 
-Duolingo is the most popular language-learning application in the world, with over 500 million users and over half a billion exercises completed daily. Beyond our core learning product, we have also entered into literacy with Duolingo ABC and English proficiency testing with the Duolingo English Test.
+New York or Remote Americas
+Job type
 
-We are passionate about educating our users, making fact-based decisions, and finding innovative solutions to complex problems. We offer meaningful work, limitless learning opportunities, and collaboration with world-class minds.
+Permanent
+Come join our cross-functional team of passionate engineers dedicated to providing the best possible developer experience.
+We,re looking to add someone who is ready to build and support the many and varied backend systems that power our test infrastructure offerings. Above all, your work will affect the way software at Spotify is written.
 
-Come brighten your life and over half a billion more.
+We,re looking to add someone who is ready to build and support the many and varied backend systems that power our test infrastructure offerings. Above all, your work will impact the way software at Spotify is written.
+What you'll do
 
-What you'll do…
+Design, develop and deploy backend services with a focus on high quality and scalability
+Build and operate testing infrastructure, testing support libraries, data pipeline services, and reporting systems
+Collaborate closely with other engineers and become a valued member of an autonomous, impactful, cross-functional team
+Take operational responsibility for the services that are owned by your team, potentially including taking part in an on-call rotation
+Work in an environment that supports your individual growth
+Who you are:
 
-Collaborate on full-stack software projects in partnership with product managers and designers
-Develop, release, and maintain services and/or infrastructure
-Lead individual project priorities, deadlines and deliverables
-Past Projects include:
-Stories and Leaderboards on Android
-Rewriting microservice that powers our most powerful gamification feature, streak
-Adding animated characters on iOS and Android
-Launching new courses, like Hindi and Indonesian
-Build customized metrics dashboards
-Personalizing practice sessions
-What we're looking for…
+You have 1+ year of experience doing backend or full stack web development
+You are comfortable writing Java or Python (or even better - both!)
+You are comfortable helping write, own, and maintain a wide variety of services
+You are comfortable running your software in Linux environments
+You are interested in modern engineering quality practices, like continuous delivery and automated testing
+You have good understanding of data structures and algorithms, and understand how to apply them to design pragmatic solutions
+Where you'll be:
 
-B.S. or M.S. degree in Computer Science or related technical field (i.e. math, physics or data science)
-Knowledge of programming languages
-Dedication to our mission of accessible education
-Ability to relocate to Pittsburgh, PA
-Why you'll love working here…
+We are a distributed workforce enabling our band members to find a work mode that is best for them!
+Where in the world? For this role, it can be within the Americas region in which we have a work location and is within working hours.
+Working hours? We operate within the Eastern Standard time zone for collaboration and ask that all be located in that time zone.
+Prefer to work from home instead? Not a problem! We have plenty of options for your working preferences. Find more information about our Work From Anywhere options here.
+Our global benefits
 
-Language learning opportunities
-20 days of paid time off and a 2-week winter break every year
-Catered in-house lunches, and breakfast and dinner options
-Annual international retreat
-Frequent company-wide dinners, monthly celebrations, social clubs, and so much more!
+Extensive learning opportunities, through our dedicated team, GreenHouse.
+Flexible share incentives letting you choose how you share in our success.
+Global parental leave, six months off - fully paid - for all new parents.
+All The Feels, our employee assistance program and self-care hub.
+Flexible public holidays, swap days off according to your values and beliefs.
+Spotify On Tour, join your colleagues on trips to industry festivals and events.
+Learn about life at Spotify
 
-We will do everything we can within reason to make sure that your interview takes place in an environment that fairly and accurately assesses your skills. If you need assistance or accommodation, please contact your recruiter.
+Spotify is an equal opportunity employer. You are welcome at Spotify for who you are, no matter where you come from, what you look like, or what’s playing in your headphones. Our platform is for everyone, and so is our workplace. The more voices we have represented and amplified in our business, the more we will all thrive, contribute, and be forward-thinking! So bring us your personal experience, your perspectives, and your background. It’s in our differences that we will find the power to keep revolutionizing the way the world listens.
 
-We aim to return to office, and as such are requiring all employees to be fully vaccinated against COVID-19.
+Spotify transformed music listening forever when we launched in 2008. Our mission is to unlock the potential of human creativity by giving a million creative artists the opportunity to live off their art and billions of fans the chance to enjoy and be passionate about these creators. Everything we do is driven by our love for music and podcasting. Today, we are the world’s most popular audio streaming subscription service with a community of more than 381 million users.
+
+This position is not eligible to be performed in Colorado.

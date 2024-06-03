@@ -55,21 +55,19 @@ class Main:
         # you
         your_name = self.data['you']['name']
         phone_number = self.data['you']['phone_number']
-        email = self.data['you']['prior_job']
-        address = self.data['you']['prior_job']
+        email = self.data['you']['email']
+        your_address_1 = self.data['you']['address_1']
+        your_address_2 = self.data['you']['address_2']
         github = self.data['you']['github']
         linked_in = self.data['you']['linked_in']
-        adjectives = self.data['you']['prior_job']
-        skills = self.to_comma_string(self.data['you']['skills'])
-        reason_for_coding = self.data['you']['prior_job']
-        hook = self.data['you']['prior_job']
+        adjectives = self.data['you']['adjectives']
+        reason_for_coding = self.data['you']['reason_for_coding']
+        hook = self.data['you']['hook']
         prior_job = self.data['you']['prior_job']
         former_industry = self.data['you']['former_industry']
-        positive_qualities = self.data['you']['prior_job']
-        stack_focus = self.data['you']['prior_job']
-        prior_job = self.data['you']['prior_job']
-        prior_job = self.data['you']['prior_job']
-        prior_job = self.data['you']['prior_job']
+        skills = self.to_comma_string(self.data['you']['skills'])
+        positive_qualities = self.data['you']['positive_qualities']
+        stack_focus = self.data['you']['stack_focus']
         # relevant_project
         project_name = self.data['relevant_project']['name']
         project_description = self.data['relevant_project']['description']
@@ -85,7 +83,7 @@ class Main:
 
         para_sentences = [
             f'{hook} I am a {adjectives} former {prior_job} who has recently transitioned into Software Engineering and am now excited to be applying for this position.',
-            f'My {former_industry} experience gave me numerous transferable skills such as {skills}, but I have since put in the work to gain essential tech skills making me an excellent candidate for this position.',
+            # f'My {former_industry} experience gave me numerous transferable skills such as {skills}, but I have since put in the work to gain essential tech skills making me an excellent candidate for this position.',
             f'My love for {reason_for_coding} led me to programming, and I decided to further my education by attending App Academy\'s 16-week, 1000+ hour Software Engineering program where I honed my expertise in Python, React, Redux, JavaScript, HTML, CSS, PostgreSQL, along with many other technologies.',
             f'In my time at App Academy, I built several projects including {project_name}, a {project_description} using {project_technologies} along with several others you can view on my resume and portfolio site as linked above.',
             f'Given my project experience, I am confident in my ability to contribute from day one as a {stack_focus} Developer as I\'ve built both alone and within a group using an Agile workflow with incredibly quick turnaround times.',
@@ -95,9 +93,9 @@ class Main:
             f'I\'m excited about this role and looking forward to hearing from you soon.'
         ]
 
-        header = f'{your_name}\n{address} - {phone_number} - {email}\n{linked_in}\n{github}'
+        header = f'{your_name}\n{your_address_1} - {your_address_2} - {phone_number} - {email}\n{linked_in}\n{github}'
         company_info = f'\n\n{self.current_date}\n\n{company_name}\n{company_address_1}\n{company_address_2}'
-        intro = f'\n\nDear {hiring_manager_name},\n\n{self.to_comma_string(para_sentences)}'
+        intro = f'\n\nDear {hiring_manager_name},\n\n{" ".join(para_sentences)}'
         goodbye = f'\n\nSincerely,\n{your_name}'
 
         combined = header + company_info + intro + goodbye
@@ -108,5 +106,5 @@ class Main:
 
 if __name__ == '__main__':
     app = Main()
-    app.find_relevant_skills()
-    # app.write_to_file()
+    # app.find_relevant_skills()
+    app.write_to_file()
